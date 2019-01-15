@@ -1,0 +1,478 @@
+{
+  "processes": [
+    {
+      "name": "wrapper",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "wrapper.js",
+          "args": [
+            "hsg_1.pdbqt",
+            "ZINC00000179.pdbqt"
+          ]
+        }
+      },
+      "ins": [
+        "parameters.txt"
+      ],
+      "outs": [
+        "config_hsg_1_ZINC00000179"
+      ]
+    },
+    {
+      "name": "vina",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "vina",
+          "args": [
+            "--config",
+            "config_hsg_1_ZINC00000179"
+          ]
+        }
+      },
+      "ins": [
+        "hsg_1.pdbqt",
+        "ZINC00000179.pdbqt",
+        "config_hsg_1_ZINC00000179"
+      ],
+      "outs": [
+        "hsg_1_ZINC00000179.pdbqt"
+      ]
+    },
+    {
+      "name": "split",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "vina_split",
+          "args": [
+            "--input",
+            "hsg_1_ZINC00000179.pdbqt"
+          ]
+        }
+      },
+      "ins": [
+        "hsg_1_ZINC00000179.pdbqt"
+      ],
+      "outs": [
+        "hsg_1_ZINC00000179_ligand_1.pdbqt",
+        "hsg_1_ZINC00000179_ligand_2.pdbqt",
+        "hsg_1_ZINC00000179_ligand_3.pdbqt",
+        "hsg_1_ZINC00000179_ligand_4.pdbqt",
+        "hsg_1_ZINC00000179_ligand_5.pdbqt",
+        "hsg_1_ZINC00000179_ligand_6.pdbqt",
+        "hsg_1_ZINC00000179_ligand_7.pdbqt",
+        "hsg_1_ZINC00000179_ligand_8.pdbqt",
+        "hsg_1_ZINC00000179_ligand_9.pdbqt"
+      ]
+    },
+    {
+      "name": "wrapper",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "wrapper.js",
+          "args": [
+            "hsg_1.pdbqt",
+            "ZINC00000345.pdbqt"
+          ]
+        }
+      },
+      "ins": [
+        "parameters.txt"
+      ],
+      "outs": [
+        "config_hsg_1_ZINC00000345"
+      ]
+    },
+    {
+      "name": "vina",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "vina",
+          "args": [
+            "--config",
+            "config_hsg_1_ZINC00000345"
+          ]
+        }
+      },
+      "ins": [
+        "hsg_1.pdbqt",
+        "ZINC00000345.pdbqt",
+        "config_hsg_1_ZINC00000345"
+      ],
+      "outs": [
+        "hsg_1_ZINC00000345.pdbqt"
+      ]
+    },
+    {
+      "name": "split",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "vina_split",
+          "args": [
+            "--input",
+            "hsg_1_ZINC00000345.pdbqt"
+          ]
+        }
+      },
+      "ins": [
+        "hsg_1_ZINC00000345.pdbqt"
+      ],
+      "outs": [
+        "hsg_1_ZINC00000345_ligand_1.pdbqt",
+        "hsg_1_ZINC00000345_ligand_2.pdbqt",
+        "hsg_1_ZINC00000345_ligand_3.pdbqt",
+        "hsg_1_ZINC00000345_ligand_4.pdbqt",
+        "hsg_1_ZINC00000345_ligand_5.pdbqt",
+        "hsg_1_ZINC00000345_ligand_6.pdbqt",
+        "hsg_1_ZINC00000345_ligand_7.pdbqt",
+        "hsg_1_ZINC00000345_ligand_8.pdbqt",
+        "hsg_1_ZINC00000345_ligand_9.pdbqt"
+      ]
+    },
+    {
+      "name": "wrapper",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "wrapper.js",
+          "args": [
+            "hsg_2.pdbqt",
+            "ZINC00000179.pdbqt"
+          ]
+        }
+      },
+      "ins": [
+        "parameters.txt"
+      ],
+      "outs": [
+        "config_hsg_2_ZINC00000179"
+      ]
+    },
+    {
+      "name": "vina",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "vina",
+          "args": [
+            "--config",
+            "config_hsg_2_ZINC00000179"
+          ]
+        }
+      },
+      "ins": [
+        "hsg_2.pdbqt",
+        "ZINC00000179.pdbqt",
+        "config_hsg_2_ZINC00000179"
+      ],
+      "outs": [
+        "hsg_2_ZINC00000179.pdbqt"
+      ]
+    },
+    {
+      "name": "split",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "vina_split",
+          "args": [
+            "--input",
+            "hsg_2_ZINC00000179.pdbqt"
+          ]
+        }
+      },
+      "ins": [
+        "hsg_2_ZINC00000179.pdbqt"
+      ],
+      "outs": [
+        "hsg_2_ZINC00000179_ligand_1.pdbqt",
+        "hsg_2_ZINC00000179_ligand_2.pdbqt",
+        "hsg_2_ZINC00000179_ligand_3.pdbqt",
+        "hsg_2_ZINC00000179_ligand_4.pdbqt",
+        "hsg_2_ZINC00000179_ligand_5.pdbqt",
+        "hsg_2_ZINC00000179_ligand_6.pdbqt",
+        "hsg_2_ZINC00000179_ligand_7.pdbqt",
+        "hsg_2_ZINC00000179_ligand_8.pdbqt",
+        "hsg_2_ZINC00000179_ligand_9.pdbqt"
+      ]
+    },
+    {
+      "name": "wrapper",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "wrapper.js",
+          "args": [
+            "hsg_2.pdbqt",
+            "ZINC00000345.pdbqt"
+          ]
+        }
+      },
+      "ins": [
+        "parameters.txt"
+      ],
+      "outs": [
+        "config_hsg_2_ZINC00000345"
+      ]
+    },
+    {
+      "name": "vina",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "vina",
+          "args": [
+            "--config",
+            "config_hsg_2_ZINC00000345"
+          ]
+        }
+      },
+      "ins": [
+        "hsg_2.pdbqt",
+        "ZINC00000345.pdbqt",
+        "config_hsg_2_ZINC00000345"
+      ],
+      "outs": [
+        "hsg_2_ZINC00000345.pdbqt"
+      ]
+    },
+    {
+      "name": "split",
+      "function": "RESTServiceCommand",
+      "type": "dataflow",
+      "config": {
+        "executor": {
+          "executable": "vina_split",
+          "args": [
+            "--input",
+            "hsg_2_ZINC00000345.pdbqt"
+          ]
+        }
+      },
+      "ins": [
+        "hsg_2_ZINC00000345.pdbqt"
+      ],
+      "outs": [
+        "hsg_2_ZINC00000345_ligand_1.pdbqt",
+        "hsg_2_ZINC00000345_ligand_2.pdbqt",
+        "hsg_2_ZINC00000345_ligand_3.pdbqt",
+        "hsg_2_ZINC00000345_ligand_4.pdbqt",
+        "hsg_2_ZINC00000345_ligand_5.pdbqt",
+        "hsg_2_ZINC00000345_ligand_6.pdbqt",
+        "hsg_2_ZINC00000345_ligand_7.pdbqt",
+        "hsg_2_ZINC00000345_ligand_8.pdbqt",
+        "hsg_2_ZINC00000345_ligand_9.pdbqt"
+      ]
+    }
+  ],
+  "signals": [
+    {
+      "name": "parameters.txt"
+    },
+    {
+      "name": "hsg_1.pdbqt"
+    },
+    {
+      "name": "hsg_2.pdbqt"
+    },
+    {
+      "name": "ZINC00000179.pdbqt"
+    },
+    {
+      "name": "ZINC00000345.pdbqt"
+    },
+    {
+      "name": "config_hsg_1_ZINC00000179"
+    },
+    {
+      "name": "hsg_1_ZINC00000179.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000179_ligand_1.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000179_ligand_2.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000179_ligand_3.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000179_ligand_4.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000179_ligand_5.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000179_ligand_6.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000179_ligand_7.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000179_ligand_8.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000179_ligand_9.pdbqt"
+    },
+    {
+      "name": "config_hsg_1_ZINC00000345"
+    },
+    {
+      "name": "hsg_1_ZINC00000345.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000345_ligand_1.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000345_ligand_2.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000345_ligand_3.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000345_ligand_4.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000345_ligand_5.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000345_ligand_6.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000345_ligand_7.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000345_ligand_8.pdbqt"
+    },
+    {
+      "name": "hsg_1_ZINC00000345_ligand_9.pdbqt"
+    },
+    {
+      "name": "config_hsg_2_ZINC00000179"
+    },
+    {
+      "name": "hsg_2_ZINC00000179.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000179_ligand_1.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000179_ligand_2.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000179_ligand_3.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000179_ligand_4.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000179_ligand_5.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000179_ligand_6.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000179_ligand_7.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000179_ligand_8.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000179_ligand_9.pdbqt"
+    },
+    {
+      "name": "config_hsg_2_ZINC00000345"
+    },
+    {
+      "name": "hsg_2_ZINC00000345.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000345_ligand_1.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000345_ligand_2.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000345_ligand_3.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000345_ligand_4.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000345_ligand_5.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000345_ligand_6.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000345_ligand_7.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000345_ligand_8.pdbqt"
+    },
+    {
+      "name": "hsg_2_ZINC00000345_ligand_9.pdbqt"
+    }
+  ],
+  "ins": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "outs": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48
+  ]
+}
