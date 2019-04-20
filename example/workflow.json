@@ -4,6 +4,7 @@
       "name": "wrapper",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "wrapper.js",
@@ -24,6 +25,7 @@
       "name": "vina",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "vina",
@@ -46,6 +48,7 @@
       "name": "split",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "vina_split",
@@ -74,6 +77,7 @@
       "name": "wrapper",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "wrapper.js",
@@ -94,6 +98,7 @@
       "name": "vina",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "vina",
@@ -116,6 +121,7 @@
       "name": "split",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "vina_split",
@@ -144,6 +150,7 @@
       "name": "wrapper",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "wrapper.js",
@@ -164,6 +171,7 @@
       "name": "vina",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "vina",
@@ -186,6 +194,7 @@
       "name": "split",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "vina_split",
@@ -214,6 +223,7 @@
       "name": "wrapper",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "wrapper.js",
@@ -234,6 +244,7 @@
       "name": "vina",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "vina",
@@ -256,6 +267,7 @@
       "name": "split",
       "function": "RESTServiceCommand",
       "type": "dataflow",
+      "firingLimit": 1,
       "config": {
         "executor": {
           "executable": "vina_split",
