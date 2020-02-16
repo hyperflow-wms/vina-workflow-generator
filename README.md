@@ -23,7 +23,11 @@ Input files can be found in this repository; vina and vina_split binaries, wrapp
 
 ## AutoDock Vina input files
 More ligands and receptor files can be found on http://zinc.docking.org/
+
 Example: http://zinc.docking.org/substances/ZINC000000000179/protomers/table.html
+
 Not all of them contains pdbqt version, in order to convert into pdbqt one can download '.mol2.gz' representation as seen here: http://zinc.docking.org/protomers/563211156/
+
 Install 'OpenBabel' e.g. installing it through Anaconda: https://anaconda.org/openbabel/openbabel
+
 Extract mol2 files `gunzip fileName.mol2.gz` and convert using 'OpenBabel': `obabel -i mol2 nameOfTheFile.mol2 -o pdbqt -O outputFile.pdbqt`
